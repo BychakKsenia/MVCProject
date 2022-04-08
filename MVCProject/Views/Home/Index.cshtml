@@ -1,0 +1,26 @@
+﻿@model MVCProject.Models.HelloClass
+@{
+ Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport" content="width=device-width" />
+ <title>Homepage</title>
+ <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+<div>
+    <h1 class="display-4">Welcome</h1>
+            <form  method="post" asp-action="Hello">
+            <p>
+            <label asp-for="Name">Input name:</label>
+            <input asp-for="Name" />
+            </p>
+            <button type="submit">Submit</button>
+            </form>
+
+</div>
+</body>
+</html> 
+
